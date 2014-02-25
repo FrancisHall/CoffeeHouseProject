@@ -81,29 +81,29 @@
 }
 
 
-
-
 - (void) login:(id)sender
 {
     const char *dbpath = [_databasePath UTF8String];
-
+    
     if (sqlite3_open(dbpath, &_customerDB) == SQLITE_OK)
     {
-
-        const char *sql = "SELECT * FROM CUSTOMER WHERE NAME='francis'";
-         sqlite3_stmt *selectstmt;
+        
+        NSString *query = [NSString stringWithFormat:@"SELECT * FROM CUSTOMER WHERE NAME='%@' AND PASSWORD='%@'", self.email.text, self.password.text];
+        const char *sql = [query UTF8String];
+        //        const char *sql = "SELECT * FROM CUSTOMER WHERE NAME='francis'";
+        sqlite3_stmt *selectstmt;
         if(sqlite3_prepare_v2(_customerDB, sql, -1, &selectstmt, NULL) == SQLITE_OK) {
             sqlite3_bind_text(selectstmt, 1, [_email.text UTF8String], -1, SQLITE_TRANSIENT);
             sqlite3_bind_text(selectstmt, 2, [_password.text UTF8String], -1, SQLITE_TRANSIENT);
             while(sqlite3_step(selectstmt) == SQLITE_ROW) {
                 _status.text = @"Login Successful";
                 NSLog(@"Successful login");
-            
             }
-
+            
+        }
     }
 }
-}
+
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
