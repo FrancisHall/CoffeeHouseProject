@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1500784A18A9950C00D21978 /* XYZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1500784918A9950C00D21978 /* XYZLoginViewController.m */; };
+		1520EF1218BCB5E400FAE8DE /* XYZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520EF1118BCB5E400FAE8DE /* XYZHomeViewController.m */; };
 		15C6CD5A18A69EE10056DD86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6CD5918A69EE10056DD86 /* Foundation.framework */; };
 		15C6CD5C18A69EE10056DD86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6CD5B18A69EE10056DD86 /* CoreGraphics.framework */; };
 		15C6CD5E18A69EE10056DD86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6CD5D18A69EE10056DD86 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		1500784818A9950C00D21978 /* XYZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZLoginViewController.h; sourceTree = "<group>"; };
 		1500784918A9950C00D21978 /* XYZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZLoginViewController.m; sourceTree = "<group>"; };
+		1520EF1018BCB5E400FAE8DE /* XYZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZHomeViewController.h; sourceTree = "<group>"; };
+		1520EF1118BCB5E400FAE8DE /* XYZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZHomeViewController.m; sourceTree = "<group>"; };
 		15C6CD5618A69EE10056DD86 /* CoffeeSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C6CD5918A69EE10056DD86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15C6CD5B18A69EE10056DD86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				15C6CD6818A69EE20056DD86 /* XYZAppDelegate.h */,
 				15C6CD6918A69EE20056DD86 /* XYZAppDelegate.m */,
 				15C6CD6B18A69EE20056DD86 /* Main.storyboard */,
+				1520EF1018BCB5E400FAE8DE /* XYZHomeViewController.h */,
+				1520EF1118BCB5E400FAE8DE /* XYZHomeViewController.m */,
 				1500784818A9950C00D21978 /* XYZLoginViewController.h */,
 				1500784918A9950C00D21978 /* XYZLoginViewController.m */,
 				15C6CD6E18A69EE20056DD86 /* XYZViewController.h */,
@@ -266,6 +271,7 @@
 			files = (
 				15C6CD7018A69EE20056DD86 /* XYZViewController.m in Sources */,
 				15C6CD6A18A69EE20056DD86 /* XYZAppDelegate.m in Sources */,
+				1520EF1218BCB5E400FAE8DE /* XYZHomeViewController.m in Sources */,
 				1500784A18A9950C00D21978 /* XYZLoginViewController.m in Sources */,
 				15C6CD6618A69EE20056DD86 /* main.m in Sources */,
 			);

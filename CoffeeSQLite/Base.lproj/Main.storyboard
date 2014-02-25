@@ -83,16 +83,17 @@
                         <outlet property="email" destination="0eB-ta-JOO" id="42h-C1-X9Q"/>
                         <outlet property="login" destination="pce-Xm-zPQ" id="ixo-yH-kTf"/>
                         <outlet property="password" destination="xIt-oX-1hg" id="axv-rO-glW"/>
+                        <segue destination="eRI-be-8Bk" kind="modal" identifier="loginsegue" id="x8Z-dM-mnr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DD0-jZ-EDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="196"/>
+            <point key="canvasLocation" x="104" y="268"/>
         </scene>
-        <!--View Controller - Home-->
+        <!--Home View Controller - Home-->
         <scene sceneID="XxA-ZR-a3e">
             <objects>
-                <viewController id="aPd-Ac-jsK" sceneMemberID="viewController">
+                <viewController id="aPd-Ac-jsK" customClass="XYZHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6OI-vl-u5F"/>
                         <viewControllerLayoutGuide type="bottom" id="qEZ-5b-xgU"/>
@@ -116,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29n-nZ-sOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312" y="-146"/>
+            <point key="canvasLocation" x="938" y="-398"/>
         </scene>
         <!--View Controller - NewUser-->
         <scene sceneID="ufC-wZ-h7g">
@@ -296,6 +297,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eRI-be-8Bk" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Svb-w9-6Wn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lnn-zA-JmO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -311,7 +313,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2UU-cL-HNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="-146"/>
+            <point key="canvasLocation" x="525" y="-398"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
