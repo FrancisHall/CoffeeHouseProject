@@ -108,12 +108,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFa-qd-weh">
+                                <rect key="frame" x="249" y="446" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UmP-Bl-fwt" kind="modal" id="Bov-tq-Sd7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="TrX-1k-qjF">
-                        <barButtonItem key="backBarButtonItem" title="login" id="Z6h-VV-tHk"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Home" id="oL0-v6-MLI">
+                        <barButtonItem key="leftBarButtonItem" id="vv1-k6-12E"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29n-nZ-sOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,4 +333,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Bov-tq-Sd7"/>
+    </inferredMetricsTieBreakers>
 </document>
