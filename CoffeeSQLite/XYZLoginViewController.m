@@ -114,14 +114,6 @@
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"loginsegue"]) {
-        XYZHomeViewController *homecontroller = [segue destinationViewController];
-        homecontroller.customername.text=_email.text;
-    }
-}
-
 
 
 
