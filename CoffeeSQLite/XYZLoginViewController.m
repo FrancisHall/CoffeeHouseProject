@@ -7,6 +7,7 @@
 //
 
 #import "XYZLoginViewController.h"
+#import "XYZHomeViewController.h"
 
 @interface XYZLoginViewController ()
 
@@ -104,12 +105,24 @@
             while(sqlite3_step(selectstmt) == SQLITE_ROW) {
                 [self performSegueWithIdentifier:@"loginsegue" sender:self];
                 _status.text = @"Login Successful";
+                
                 NSLog(@"Successful login");
             }
             
         }
     }
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"loginsegue"]) {
+        XYZHomeViewController *homecontroller = [segue destinationViewController];
+        homecontroller.customername.text=_email.text;
+    }
+}
+
+
 
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField {
@@ -122,6 +135,17 @@
     [self.view endEditing:YES];
     //when the background is tapped, the keyboard is removed.
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    // instead of doing a background outlet instead implement this method
+    
+    if (![self.view isFirstResponder]) {
+        [self.view becomeFirstResponder];
+    }
+}
+
+
 
 
 @end

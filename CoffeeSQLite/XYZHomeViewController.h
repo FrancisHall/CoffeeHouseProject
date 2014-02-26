@@ -10,4 +10,6 @@
 
 @interface XYZHomeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *customername;
+
 @end
