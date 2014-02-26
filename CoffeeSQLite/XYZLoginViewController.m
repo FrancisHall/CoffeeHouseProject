@@ -108,7 +108,10 @@
                 
                 NSLog(@"Successful login");
             }
-            NSLog(@"Login Error");
+            NSString *linebreak=@"There was an error logging in.\n Please check your username and password.";
+            UIAlertView* loginerror=[[UIAlertView alloc] initWithTitle:@"Login Error" message:linebreak delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil];
+            [loginerror show];
+
         }
     }
 }
