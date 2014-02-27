@@ -108,6 +108,7 @@
                 
                 NSLog(@"Successful login");
             }
+            
             NSString *linebreak=@"There was an error logging in.\n Please check your username and password.";
             UIAlertView* loginerror=[[UIAlertView alloc] initWithTitle:@"Login Error" message:linebreak delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil];
             [loginerror show];
@@ -126,10 +127,15 @@
     // Hides the keyboard when the 'return' button is pushed.
 }
 
-- (IBAction)backgroundtap:(id)sender {
-    [self.view endEditing:YES];
-    //when the background is tapped, the keyboard is removed.
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"loginsegue"]) {
+        XYZHomeViewController *homecontroller = [segue destinationViewController];
+        homecontroller.customername.text=_email.text;
+    }
 }
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 {

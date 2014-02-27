@@ -24,7 +24,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *status;
 
-- (IBAction)backgroundtap:(id)sender;
-
 
 @end
